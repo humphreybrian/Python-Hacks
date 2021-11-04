@@ -1,6 +1,6 @@
 from pdfrw import PdfReader, PdfWriter, PageMerge
 
-def Wwatermarker(path, watermark, output):
+def watermarker(path, watermark, output):
     base_pdf = PdfReader(path)
     watermarker_pdf = PdfReader(watermark)
     mark = watermarker_pdf.pages[0]
